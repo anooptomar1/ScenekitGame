@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC06F2CF1B3E9B00005BFCFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2CE1B3E9B00005BFCFD /* AppDelegate.m */; };
+		AC06F2D11B3E9B00005BFCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2D01B3E9B00005BFCFD /* main.m */; };
+		AC06F2D41B3E9B00005BFCFD /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2D31B3E9B00005BFCFD /* GameView.m */; };
+		AC06F2D71B3E9B00005BFCFD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2D61B3E9B00005BFCFD /* GameViewController.m */; };
+		AC06F2D91B3E9B00005BFCFD /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AC06F2D81B3E9B00005BFCFD /* art.scnassets */; };
+		AC06F2DB1B3E9B00005BFCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC06F2DA1B3E9B00005BFCFD /* Images.xcassets */; };
+		AC06F2DE1B3E9B01005BFCFD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC06F2DC1B3E9B00005BFCFD /* MainMenu.xib */; };
+		AC06F2EA1B3E9B01005BFCFD /* scenekit_demo_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2E91B3E9B01005BFCFD /* scenekit_demo_2Tests.m */; };
+		AC06F3071B3E9C77005BFCFD /* GameComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2F41B3E9C76005BFCFD /* GameComponent.m */; };
+		AC06F3081B3E9C77005BFCFD /* GameDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2F61B3E9C76005BFCFD /* GameDirector.m */; };
+		AC06F3091B3E9C77005BFCFD /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2F81B3E9C76005BFCFD /* GameObject.m */; };
+		AC06F30A1B3E9C77005BFCFD /* GameObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2FA1B3E9C76005BFCFD /* GameObjectBuilder.m */; };
+		AC06F30B1B3E9C77005BFCFD /* GameObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2FC1B3E9C77005BFCFD /* GameObjectManager.m */; };
+		AC06F30C1B3E9C77005BFCFD /* GameStage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F2FE1B3E9C77005BFCFD /* GameStage.m */; };
+		AC06F30D1B3E9C77005BFCFD /* MainStage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F3001B3E9C77005BFCFD /* MainStage.m */; };
+		AC06F30E1B3E9C77005BFCFD /* Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F3021B3E9C77005BFCFD /* Skin.m */; };
+		AC06F3101B3E9C77005BFCFD /* Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = AC06F3061B3E9C77005BFCFD /* Transform.m */; };
+		AC1801301B4520A500510542 /* DamageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AC18012F1B4520A500510542 /* DamageHandler.m */; };
+		AC1801361B45237C00510542 /* mathutil.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1801351B45237C00510542 /* mathutil.m */; };
+		AC809B591B4F766E0086C686 /* ActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC809B581B4F766E0086C686 /* ActionController.m */; };
+		AC88FFE31B50EB4000E09CE7 /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC88FFE21B50EB4000E09CE7 /* GameCharacter.m */; };
+		AC88FFE71B50F9E400E09CE7 /* ActionIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = AC88FFE61B50F9E400E09CE7 /* ActionIdle.m */; };
+		AC88FFEA1B50FA2D00E09CE7 /* ActionMove.m in Sources */ = {isa = PBXBuildFile; fileRef = AC88FFE91B50FA2D00E09CE7 /* ActionMove.m */; };
+		AC88FFED1B50FF8400E09CE7 /* GameMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AC88FFEC1B50FF8400E09CE7 /* GameMap.m */; };
+		ACED1C871B6371C000274B64 /* Collider.m in Sources */ = {isa = PBXBuildFile; fileRef = ACED1C861B6371C000274B64 /* Collider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC06F2E41B3E9B01005BFCFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC06F2C01B3E9B00005BFCFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC06F2C71B3E9B00005BFCFD;
+			remoteInfo = "scenekit-demo-2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC06F2C81B3E9B00005BFCFD /* scenekit-demo-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scenekit-demo-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC06F2CC1B3E9B00005BFCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC06F2CD1B3E9B00005BFCFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC06F2CE1B3E9B00005BFCFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC06F2D01B3E9B00005BFCFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC06F2D21B3E9B00005BFCFD /* GameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		AC06F2D31B3E9B00005BFCFD /* GameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		AC06F2D51B3E9B00005BFCFD /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		AC06F2D61B3E9B00005BFCFD /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		AC06F2D81B3E9B00005BFCFD /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		AC06F2DA1B3E9B00005BFCFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC06F2DD1B3E9B01005BFCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AC06F2E31B3E9B01005BFCFD /* scenekit-demo-2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scenekit-demo-2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC06F2E81B3E9B01005BFCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC06F2E91B3E9B01005BFCFD /* scenekit_demo_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scenekit_demo_2Tests.m; sourceTree = "<group>"; };
+		AC06F2F31B3E9C76005BFCFD /* GameComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameComponent.h; sourceTree = "<group>"; };
+		AC06F2F41B3E9C76005BFCFD /* GameComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameComponent.m; sourceTree = "<group>"; };
+		AC06F2F51B3E9C76005BFCFD /* GameDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDirector.h; sourceTree = "<group>"; };
+		AC06F2F61B3E9C76005BFCFD /* GameDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDirector.m; sourceTree = "<group>"; };
+		AC06F2F71B3E9C76005BFCFD /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		AC06F2F81B3E9C76005BFCFD /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		AC06F2F91B3E9C76005BFCFD /* GameObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectBuilder.h; sourceTree = "<group>"; };
+		AC06F2FA1B3E9C76005BFCFD /* GameObjectBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectBuilder.m; sourceTree = "<group>"; };
+		AC06F2FB1B3E9C77005BFCFD /* GameObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectManager.h; sourceTree = "<group>"; };
+		AC06F2FC1B3E9C77005BFCFD /* GameObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectManager.m; sourceTree = "<group>"; };
+		AC06F2FD1B3E9C77005BFCFD /* GameStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStage.h; sourceTree = "<group>"; };
+		AC06F2FE1B3E9C77005BFCFD /* GameStage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStage.m; sourceTree = "<group>"; };
+		AC06F2FF1B3E9C77005BFCFD /* MainStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainStage.h; sourceTree = "<group>"; };
+		AC06F3001B3E9C77005BFCFD /* MainStage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainStage.m; sourceTree = "<group>"; };
+		AC06F3011B3E9C77005BFCFD /* Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skin.h; sourceTree = "<group>"; };
+		AC06F3021B3E9C77005BFCFD /* Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Skin.m; sourceTree = "<group>"; };
+		AC06F3051B3E9C77005BFCFD /* Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transform.h; sourceTree = "<group>"; };
+		AC06F3061B3E9C77005BFCFD /* Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transform.m; sourceTree = "<group>"; };
+		AC18012E1B4520A500510542 /* DamageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DamageHandler.h; sourceTree = "<group>"; };
+		AC18012F1B4520A500510542 /* DamageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DamageHandler.m; sourceTree = "<group>"; };
+		AC1801341B45237C00510542 /* mathutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathutil.h; sourceTree = "<group>"; };
+		AC1801351B45237C00510542 /* mathutil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mathutil.m; sourceTree = "<group>"; };
+		AC809B571B4F766E0086C686 /* ActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionController.h; sourceTree = "<group>"; };
+		AC809B581B4F766E0086C686 /* ActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionController.m; sourceTree = "<group>"; };
+		AC88FFE11B50EB4000E09CE7 /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharacter.h; sourceTree = "<group>"; };
+		AC88FFE21B50EB4000E09CE7 /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharacter.m; sourceTree = "<group>"; };
+		AC88FFE51B50F9E400E09CE7 /* ActionIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionIdle.h; sourceTree = "<group>"; };
+		AC88FFE61B50F9E400E09CE7 /* ActionIdle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionIdle.m; sourceTree = "<group>"; };
+		AC88FFE81B50FA2D00E09CE7 /* ActionMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionMove.h; sourceTree = "<group>"; };
+		AC88FFE91B50FA2D00E09CE7 /* ActionMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionMove.m; sourceTree = "<group>"; };
+		AC88FFEB1B50FF8400E09CE7 /* GameMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMap.h; sourceTree = "<group>"; };
+		AC88FFEC1B50FF8400E09CE7 /* GameMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameMap.m; sourceTree = "<group>"; };
+		ACED1C851B6371C000274B64 /* Collider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collider.h; sourceTree = "<group>"; };
+		ACED1C861B6371C000274B64 /* Collider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC06F2C51B3E9B00005BFCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC06F2E01B3E9B01005BFCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC06F2BF1B3E9B00005BFCFD = {
+			isa = PBXGroup;
+			children = (
+				AC06F2CA1B3E9B00005BFCFD /* scenekit-demo-2 */,
+				AC06F2E61B3E9B01005BFCFD /* scenekit-demo-2Tests */,
+				AC06F2C91B3E9B00005BFCFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC06F2C91B3E9B00005BFCFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC06F2C81B3E9B00005BFCFD /* scenekit-demo-2.app */,
+				AC06F2E31B3E9B01005BFCFD /* scenekit-demo-2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC06F2CA1B3E9B00005BFCFD /* scenekit-demo-2 */ = {
+			isa = PBXGroup;
+			children = (
+				AC1801341B45237C00510542 /* mathutil.h */,
+				AC1801351B45237C00510542 /* mathutil.m */,
+				AC06F2CD1B3E9B00005BFCFD /* AppDelegate.h */,
+				AC06F2CE1B3E9B00005BFCFD /* AppDelegate.m */,
+				AC06F2D21B3E9B00005BFCFD /* GameView.h */,
+				AC06F2D31B3E9B00005BFCFD /* GameView.m */,
+				AC06F2D51B3E9B00005BFCFD /* GameViewController.h */,
+				AC06F2D61B3E9B00005BFCFD /* GameViewController.m */,
+				AC06F3111B3E9C82005BFCFD /* New Group */,
+				AC06F2D81B3E9B00005BFCFD /* art.scnassets */,
+				AC06F2DA1B3E9B00005BFCFD /* Images.xcassets */,
+				AC06F2DC1B3E9B00005BFCFD /* MainMenu.xib */,
+				AC06F2CB1B3E9B00005BFCFD /* Supporting Files */,
+			);
+			path = "scenekit-demo-2";
+			sourceTree = "<group>";
+		};
+		AC06F2CB1B3E9B00005BFCFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC06F2CC1B3E9B00005BFCFD /* Info.plist */,
+				AC06F2D01B3E9B00005BFCFD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC06F2E61B3E9B01005BFCFD /* scenekit-demo-2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC06F2E91B3E9B01005BFCFD /* scenekit_demo_2Tests.m */,
+				AC06F2E71B3E9B01005BFCFD /* Supporting Files */,
+			);
+			path = "scenekit-demo-2Tests";
+			sourceTree = "<group>";
+		};
+		AC06F2E71B3E9B01005BFCFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC06F2E81B3E9B01005BFCFD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC06F3111B3E9C82005BFCFD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				AC06F2F51B3E9C76005BFCFD /* GameDirector.h */,
+				AC06F2F61B3E9C76005BFCFD /* GameDirector.m */,
+				AC06F2FD1B3E9C77005BFCFD /* GameStage.h */,
+				AC06F2FE1B3E9C77005BFCFD /* GameStage.m */,
+				AC06F2FF1B3E9C77005BFCFD /* MainStage.h */,
+				AC06F3001B3E9C77005BFCFD /* MainStage.m */,
+				AC88FFEB1B50FF8400E09CE7 /* GameMap.h */,
+				AC88FFEC1B50FF8400E09CE7 /* GameMap.m */,
+				AC06F2F71B3E9C76005BFCFD /* GameObject.h */,
+				AC06F2F81B3E9C76005BFCFD /* GameObject.m */,
+				AC06F2F31B3E9C76005BFCFD /* GameComponent.h */,
+				AC06F2F41B3E9C76005BFCFD /* GameComponent.m */,
+				AC06F2F91B3E9C76005BFCFD /* GameObjectBuilder.h */,
+				AC06F2FA1B3E9C76005BFCFD /* GameObjectBuilder.m */,
+				AC06F2FB1B3E9C77005BFCFD /* GameObjectManager.h */,
+				AC06F2FC1B3E9C77005BFCFD /* GameObjectManager.m */,
+				ACA9FDD31B50E8570072E72D /* gameObjects */,
+				AC06F3121B3E9C97005BFCFD /* component */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		AC06F3121B3E9C97005BFCFD /* component */ = {
+			isa = PBXGroup;
+			children = (
+				AC06F3011B3E9C77005BFCFD /* Skin.h */,
+				AC06F3021B3E9C77005BFCFD /* Skin.m */,
+				AC06F3051B3E9C77005BFCFD /* Transform.h */,
+				AC06F3061B3E9C77005BFCFD /* Transform.m */,
+				ACED1C851B6371C000274B64 /* Collider.h */,
+				ACED1C861B6371C000274B64 /* Collider.m */,
+				AC18012E1B4520A500510542 /* DamageHandler.h */,
+				AC18012F1B4520A500510542 /* DamageHandler.m */,
+				AC809B571B4F766E0086C686 /* ActionController.h */,
+				AC809B581B4F766E0086C686 /* ActionController.m */,
+				AC88FFE41B50F9BF00E09CE7 /* Actions */,
+			);
+			name = component;
+			sourceTree = "<group>";
+		};
+		AC88FFE41B50F9BF00E09CE7 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				AC88FFE51B50F9E400E09CE7 /* ActionIdle.h */,
+				AC88FFE61B50F9E400E09CE7 /* ActionIdle.m */,
+				AC88FFE81B50FA2D00E09CE7 /* ActionMove.h */,
+				AC88FFE91B50FA2D00E09CE7 /* ActionMove.m */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		ACA9FDD31B50E8570072E72D /* gameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				AC88FFE11B50EB4000E09CE7 /* GameCharacter.h */,
+				AC88FFE21B50EB4000E09CE7 /* GameCharacter.m */,
+			);
+			name = gameObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC06F2C71B3E9B00005BFCFD /* scenekit-demo-2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC06F2ED1B3E9B01005BFCFD /* Build configuration list for PBXNativeTarget "scenekit-demo-2" */;
+			buildPhases = (
+				AC06F2C41B3E9B00005BFCFD /* Sources */,
+				AC06F2C51B3E9B00005BFCFD /* Frameworks */,
+				AC06F2C61B3E9B00005BFCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "scenekit-demo-2";
+			productName = "scenekit-demo-2";
+			productReference = AC06F2C81B3E9B00005BFCFD /* scenekit-demo-2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC06F2E21B3E9B01005BFCFD /* scenekit-demo-2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC06F2F01B3E9B01005BFCFD /* Build configuration list for PBXNativeTarget "scenekit-demo-2Tests" */;
+			buildPhases = (
+				AC06F2DF1B3E9B01005BFCFD /* Sources */,
+				AC06F2E01B3E9B01005BFCFD /* Frameworks */,
+				AC06F2E11B3E9B01005BFCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC06F2E51B3E9B01005BFCFD /* PBXTargetDependency */,
+			);
+			name = "scenekit-demo-2Tests";
+			productName = "scenekit-demo-2Tests";
+			productReference = AC06F2E31B3E9B01005BFCFD /* scenekit-demo-2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC06F2C01B3E9B00005BFCFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ian Wang";
+				TargetAttributes = {
+					AC06F2C71B3E9B00005BFCFD = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					AC06F2E21B3E9B01005BFCFD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = AC06F2C71B3E9B00005BFCFD;
+					};
+				};
+			};
+			buildConfigurationList = AC06F2C31B3E9B00005BFCFD /* Build configuration list for PBXProject "scenekit-demo-2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC06F2BF1B3E9B00005BFCFD;
+			productRefGroup = AC06F2C91B3E9B00005BFCFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC06F2C71B3E9B00005BFCFD /* scenekit-demo-2 */,
+				AC06F2E21B3E9B01005BFCFD /* scenekit-demo-2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC06F2C61B3E9B00005BFCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC06F2D91B3E9B00005BFCFD /* art.scnassets in Resources */,
+				AC06F2DB1B3E9B00005BFCFD /* Images.xcassets in Resources */,
+				AC06F2DE1B3E9B01005BFCFD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC06F2E11B3E9B01005BFCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC06F2C41B3E9B00005BFCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC06F3101B3E9C77005BFCFD /* Transform.m in Sources */,
+				AC06F2D71B3E9B00005BFCFD /* GameViewController.m in Sources */,
+				AC06F30D1B3E9C77005BFCFD /* MainStage.m in Sources */,
+				AC06F30B1B3E9C77005BFCFD /* GameObjectManager.m in Sources */,
+				AC88FFED1B50FF8400E09CE7 /* GameMap.m in Sources */,
+				AC06F30E1B3E9C77005BFCFD /* Skin.m in Sources */,
+				AC88FFE71B50F9E400E09CE7 /* ActionIdle.m in Sources */,
+				AC1801301B4520A500510542 /* DamageHandler.m in Sources */,
+				AC06F3091B3E9C77005BFCFD /* GameObject.m in Sources */,
+				AC06F2D41B3E9B00005BFCFD /* GameView.m in Sources */,
+				ACED1C871B6371C000274B64 /* Collider.m in Sources */,
+				AC06F2D11B3E9B00005BFCFD /* main.m in Sources */,
+				AC88FFE31B50EB4000E09CE7 /* GameCharacter.m in Sources */,
+				AC06F3071B3E9C77005BFCFD /* GameComponent.m in Sources */,
+				AC06F2CF1B3E9B00005BFCFD /* AppDelegate.m in Sources */,
+				AC06F30A1B3E9C77005BFCFD /* GameObjectBuilder.m in Sources */,
+				AC88FFEA1B50FA2D00E09CE7 /* ActionMove.m in Sources */,
+				AC1801361B45237C00510542 /* mathutil.m in Sources */,
+				AC06F30C1B3E9C77005BFCFD /* GameStage.m in Sources */,
+				AC06F3081B3E9C77005BFCFD /* GameDirector.m in Sources */,
+				AC809B591B4F766E0086C686 /* ActionController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC06F2DF1B3E9B01005BFCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC06F2EA1B3E9B01005BFCFD /* scenekit_demo_2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC06F2E51B3E9B01005BFCFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC06F2C71B3E9B00005BFCFD /* scenekit-demo-2 */;
+			targetProxy = AC06F2E41B3E9B01005BFCFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC06F2DC1B3E9B00005BFCFD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC06F2DD1B3E9B01005BFCFD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC06F2EB1B3E9B01005BFCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AC06F2EC1B3E9B01005BFCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AC06F2EE1B3E9B01005BFCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "scenekit-demo-2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC06F2EF1B3E9B01005BFCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "scenekit-demo-2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC06F2F11B3E9B01005BFCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "scenekit-demo-2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scenekit-demo-2.app/Contents/MacOS/scenekit-demo-2";
+			};
+			name = Debug;
+		};
+		AC06F2F21B3E9B01005BFCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "scenekit-demo-2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scenekit-demo-2.app/Contents/MacOS/scenekit-demo-2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC06F2C31B3E9B00005BFCFD /* Build configuration list for PBXProject "scenekit-demo-2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC06F2EB1B3E9B01005BFCFD /* Debug */,
+				AC06F2EC1B3E9B01005BFCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC06F2ED1B3E9B01005BFCFD /* Build configuration list for PBXNativeTarget "scenekit-demo-2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC06F2EE1B3E9B01005BFCFD /* Debug */,
+				AC06F2EF1B3E9B01005BFCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC06F2F01B3E9B01005BFCFD /* Build configuration list for PBXNativeTarget "scenekit-demo-2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC06F2F11B3E9B01005BFCFD /* Debug */,
+				AC06F2F21B3E9B01005BFCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC06F2C01B3E9B00005BFCFD /* Project object */;
+}
